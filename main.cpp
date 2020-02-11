@@ -5,6 +5,10 @@ int main() {
   string greet = "Sveikas,";
   cout << "Iveskite savo varda: "<<endl;
   cin >> name;
+  int length = name.size();
+  if(name[length-1]=='a')
+  greet = "Sveika, ";
+
   int n = greet.length();
   n+=name.length();
   n+=5;
